@@ -1,0 +1,70 @@
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C LCD(0x20, 16, 2);
+
+void setup() {
+LCD.init();
+LCD.backlight();
+}
+
+void loop() {
+LCD.clear();
+LCD.setCursor(3, 0);
+LCD.print("utak ko");
+delay(1200);
+
+LCD.setCursor(5, 1);
+LCD.print("ay");
+delay(1500);
+
+LCD.clear();
+LCD.setCursor(1, 0);
+LCD.print("punong-puno");
+delay(1200);
+
+LCD.setCursor(6, 1);
+LCD.print("ng");
+delay(1500);
+  
+LCD.clear();
+LCD.setCursor(2, 0);
+LCD.print("imahinasyon");
+delay(2200);
+
+LCD.clear();
+LCD.setCursor(2, 0);
+LCD.print("kasama");
+delay(1200);
+
+LCD.setCursor(5, 1);
+LCD.print("ka");
+delay(2000);
+  
+LCD.clear();
+LCD.setCursor(1, 0);
+LCD.print("isang");
+delay(1000);
+
+LCD.setCursor(2, 1);
+LCD.print("himala");
+delay(1000);
+  
+LCD.clear();
+LCD.setCursor(2, 0);
+LCD.print("kung");
+delay(900);
+  
+LCD.setCursor(2, 1);
+LCD.print("mapapa");
+delay(2000);
+  
+LCD.clear();
+LCD.setCursor(3, 0);
+LCD.print("sa'kin");
+delay(1200);
+  
+LCD.setCursor(5, 1);
+LCD.print("ka");
+delay(3000);
+  
+}
