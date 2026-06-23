@@ -1,0 +1,39 @@
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.UIManager;
+
+public class earlliee {
+
+    public static void main(String[] args) {
+        UIManager.put("Button.focus", new javax.swing.plaf.ColorUIResource(new java.awt.Color(0, 0, 0, 0)));
+
+        JFrame frame = new JFrame();
+        frame.setAlwaysOnTop(true);
+
+        JOptionPane.showMessageDialog(frame, "Pag tayo nakuha ng jollibee", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Ang sarap kaya sa feeling ng", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Yung taong kausap mo", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Genuine sayo", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Na halos lahat", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Halos lahat din naman ng sasabihin", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Mo sa kanya", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Pinapakinggan niya", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Every rant", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Ano mang sumbong", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "At ano mang nangyari sa araw mo", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Sarap sa pakiramdam", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Parang ang gaan-gaan lang sabihin", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Sa kanya", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Sarap sa pakiramdam", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Ng merong taong", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Nandiyan para sayo no", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Yung feeling na", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Meron kang kakampi", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Lalo na pag meron jollibee", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Kasi nga dito...", "Message", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(frame, "Bida ang saya", "Message", JOptionPane.INFORMATION_MESSAGE);
+
+        frame.dispose();
+        System.exit(0);
+    }
+}
