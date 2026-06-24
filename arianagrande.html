@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ariana grande</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #ffffff;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .lyrics-container {
+            max-width: 80%;
+            padding: 20px;
+            min-height: 50px; 
+        }
+
+        .lyric-line {
+            font-size: 1.5rem; 
+            text-transform: uppercase;
+            color: #ffb6c1; 
+            text-shadow: 2px 2px 12px rgba(255, 105, 180, 0.6);
+            margin: 20px 0;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            display: none;
+        }
+
+        .lyric-line.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #next-btn {
+            padding: 8px 20px;         
+            font-size: 0.9rem;          
+            background-color: transparent; 
+            color: #ff69b4;             
+            border: 1px solid #ff69b4;  
+            border-radius: 4px;         
+            cursor: pointer;
+            font-weight: normal;
+            transition: all 0.2s ease;
+            margin-top: 150px; 
+        }
+
+        #next-btn:hover {
+            background-color: rgba(255, 105, 180, 0.15); 
+            box-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
+            transform: scale(1.02);
+        }
+
+        #next-btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="lyrics-container">
+        <div class="lyric-line">"JUST KNOW THAT I WILL FIND MY WAY"</div>
+        <div class="lyric-line">"FROM YOU"</div>
+        <div class="lyric-line">"LIKE FLOWERS FROM A TOMB"</div>
+        <div class="lyric-line">"WHILE YOU DECIDE WHO YOU ARE"</div>
+        <div class="lyric-line">"AND I CAN SEE RIGHT THROUGH"</div>
+        <div class="lyric-line">"LIKE SHADOWS ON THE MOON"</div>
+        <div class="lyric-line">"AND IT'S ALL BAD NEWS"</div>
+        <div class="lyric-line">"YEAHH, I, I, I"</div>
+        <div class="lyric-line">"HATE THAT I MADE YOU LOVE ME"</div>
+    </div>
+
+    <button id="next-btn">Next</button>
+
+    <script>
+        const lines = document.querySelectorAll('.lyric-line');
+        const nextBtn = document.getElementById('next-btn');
+        let currentIndex = -1; 
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex >= 0 && currentIndex < lines.length) {
+                lines[currentIndex].classList.remove('active');
+            }
+
+            currentIndex++;
+
+            if (currentIndex < lines.length) {
+                lines[currentIndex].classList.add('active');
+                
+                if (currentIndex === lines.length - 1) {
+                    nextBtn.innerText = "Reset";
+                }
+            } else {
+                currentIndex = 0;
+                lines[currentIndex].classList.add('active');
+                nextBtn.innerText = "Next";
+            }
+        });
+    </script>
+</body>
+</html>
